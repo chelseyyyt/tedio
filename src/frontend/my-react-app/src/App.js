@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import Homepage from './pages/Homepage/Homepage.jsx';
-import Age from './pages/Age/Age.jsx';
+import ProfileSetup from './pages/Profile/ProfileSetup.jsx';
 import Values from './pages/Values/Values.jsx';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                 <Link to="/values">Values</Link>
               </li>
               <li>
-                <Link to="/age">Age</Link>
+                <Link to="/profilesetup">Profile Setup</Link>
               </li>
             </ul>
           </nav>
@@ -31,7 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/values" element={<Values />} />
-          <Route path="/age" element={<Age />} />
+          <Route path="/profilesetup" element={<ProfileSetup />} />
         </Routes>
       </div>
     </Router>
