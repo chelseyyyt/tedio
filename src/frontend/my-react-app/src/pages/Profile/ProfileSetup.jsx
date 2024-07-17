@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './ProfileSetup.css'; // Add your CSS file for styling
+import './ProfileSetup.css';
 
 const ProfileSetup = () => {
   const [age, setAge] = useState('');
